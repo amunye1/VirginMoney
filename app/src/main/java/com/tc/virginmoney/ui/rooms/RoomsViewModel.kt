@@ -12,7 +12,8 @@ import kotlinx.coroutines.launch
 
 class RoomsViewModel : ViewModel() {
 
-    val _roomFacts = MutableLiveData<ArrayList<RoomFactsItemModel>>()
+    private val _roomFacts = MutableLiveData<ArrayList<RoomFactsItemModel>>()
+    val roomFact  :LiveData<ArrayList<RoomFactsItemModel>>  = _roomFacts
         fun getRoomFacts(){
             GlobalScope.launch {
                 val result = ApiDetails.service.getRoomFacts()
