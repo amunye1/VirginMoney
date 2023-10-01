@@ -69,4 +69,7 @@ dependencies {
     implementation ("androidx.recyclerview:recyclerview:1.3.1")
     // For control over item selection of both touch and mouse driven selection
     implementation ("androidx.recyclerview:recyclerview-selection:1.1.0")
+
+    //annotation proccessor for image of avatar
+    annotationProcessor ("com.github.bumptech.glide:compiler:4.12.0")
 }

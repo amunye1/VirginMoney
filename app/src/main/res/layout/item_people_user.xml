@@ -20,50 +20,51 @@
             >
 
             <ImageView
-                android:id="@+id/ImageView"
+                android:id="@+id/ImageView1"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toStartOf="@id/jobTitle"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
-                android:src="@drawable/person_24px"/>
+                android:src="@drawable/person_24px"
+                android:contentDescription="This will be an image of the people avatar"/>
+
 
             <TextView
                 android:id="@+id/jobTitle"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                app:layout_constraintStart_toEndOf="@id/ImageView"
+                app:layout_constraintStart_toEndOf="@id/ImageView1"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 android:layout_marginTop="16dp"
                 android:layout_marginStart="16dp"
                 tools:text="Software Engineer"
+                android:textSize="15sp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:padding="6dp"
                 />
 
             <TextView
                 android:id="@+id/name"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                app:layout_constraintStart_toEndOf="@id/ImageView"
+                app:layout_constraintStart_toEndOf="@id/ImageView1"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="@id/jobTitle"
+                android:ellipsize="end"
+                android:maxLines="2"
                 android:layout_marginTop="16dp"
                 android:layout_marginStart="16dp"
+                android:padding="6dp"
                 tools:text="Jenny"
+                android:textSize="15sp"
+                android:textStyle="bold"
                 />
 
-            <TextView
-                android:id="@+id/lastname"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                app:layout_constraintStart_toEndOf="@id/ImageView"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="@id/name"
-                android:layout_marginTop="16dp"
-                android:layout_marginStart="16dp"
-                tools:text="Timberland"
-                />
+
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

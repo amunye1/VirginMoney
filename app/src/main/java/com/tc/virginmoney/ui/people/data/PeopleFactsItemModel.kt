@@ -2,7 +2,10 @@ package com.tc.virginmoney.ui.people.data
 
 
 import com.google.gson.annotations.SerializedName
-
+//This is serialization of json data
+//this will tell kotlin that there will be json data
+//that data will be represented in a specific way
+//for example avatar will call avatar data with a image url property
 data class PeopleFactsItemModel(
     @SerializedName("avatar")
     val avatar: String? = "",
