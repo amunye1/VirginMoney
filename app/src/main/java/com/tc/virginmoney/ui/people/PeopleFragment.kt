@@ -36,7 +36,7 @@ class PeopleFragment : Fragment() {
         val root: View = binding.root
 
         // We're observing changes in the data and updating the UI when data changes.
-        peopleViewModel._peopleFacts.observe(viewLifecycleOwner){
+        peopleViewModel.peopleFact.observe(viewLifecycleOwner){
             it?.let{
                 // We're updating the UI with the new data.
                 showData(it)
